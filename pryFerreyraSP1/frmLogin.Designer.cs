@@ -41,24 +41,28 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Image = Properties.Resources.fondo;
             pictureBox1.Location = new Point(12, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(270, 397);
+            pictureBox1.Size = new Size(276, 397);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
             // gbLogin
             // 
+            gbLogin.BackColor = Color.LightSteelBlue;
             gbLogin.Controls.Add(txtContraseña);
             gbLogin.Controls.Add(lblContraseña);
             gbLogin.Controls.Add(txtUsuario);
             gbLogin.Controls.Add(btnIngresar);
             gbLogin.Controls.Add(lblUsuario);
-            gbLogin.Location = new Point(44, 59);
+            gbLogin.Location = new Point(45, 66);
             gbLogin.Name = "gbLogin";
             gbLogin.Size = new Size(200, 263);
             gbLogin.TabIndex = 8;
             gbLogin.TabStop = false;
+            gbLogin.Enter += gbLogin_Enter;
             // 
             // txtContraseña
             // 
@@ -85,12 +89,15 @@
             // 
             // btnIngresar
             // 
+            btnIngresar.BackColor = Color.Black;
+            btnIngresar.ForeColor = SystemColors.ButtonHighlight;
             btnIngresar.Location = new Point(115, 164);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(75, 23);
             btnIngresar.TabIndex = 7;
             btnIngresar.Text = "Ingresar";
-            btnIngresar.UseVisualStyleBackColor = true;
+            btnIngresar.UseVisualStyleBackColor = false;
+            btnIngresar.Click += btnIngresar_Click;
             // 
             // lblUsuario
             // 
@@ -105,7 +112,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(294, 412);
+            BackColor = SystemColors.ActiveCaptionText;
+            ClientSize = new Size(300, 412);
             Controls.Add(gbLogin);
             Controls.Add(pictureBox1);
             Name = "frmLogin";
