@@ -28,23 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
             gbLogin = new GroupBox();
-            lblBienvenido = new Label();
             btnAceptar = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            lblBienvenido = new Label();
             gbLogin.SuspendLayout();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.fondo1;
-            pictureBox1.Location = new Point(25, -399);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(736, 1308);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // gbLogin
             // 
@@ -57,6 +45,17 @@
             gbLogin.TabIndex = 9;
             gbLogin.TabStop = false;
             // 
+            // btnAceptar
+            // 
+            btnAceptar.BackColor = Color.White;
+            btnAceptar.ForeColor = SystemColors.ActiveCaptionText;
+            btnAceptar.Location = new Point(211, 137);
+            btnAceptar.Name = "btnAceptar";
+            btnAceptar.Size = new Size(79, 30);
+            btnAceptar.TabIndex = 10;
+            btnAceptar.Text = "Aceptar";
+            btnAceptar.UseVisualStyleBackColor = false;
+            // 
             // lblBienvenido
             // 
             lblBienvenido.AutoSize = true;
@@ -68,36 +67,22 @@
             lblBienvenido.Text = "Bienvenido al Sistema";
             lblBienvenido.Click += lblContraseña_Click;
             // 
-            // btnAceptar
-            // 
-            btnAceptar.BackColor = Color.Black;
-            btnAceptar.ForeColor = SystemColors.ButtonHighlight;
-            btnAceptar.Location = new Point(216, 139);
-            btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(75, 23);
-            btnAceptar.TabIndex = 10;
-            btnAceptar.Text = "Aceptar";
-            btnAceptar.UseVisualStyleBackColor = false;
-            // 
             // frmInicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaptionText;
+            BackColor = Color.White;
             ClientSize = new Size(800, 450);
             Controls.Add(gbLogin);
-            Controls.Add(pictureBox1);
             Name = "frmInicio";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmInicio";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             gbLogin.ResumeLayout(false);
             gbLogin.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private GroupBox gbLogin;
         private Label lblBienvenido;
         private Button btnAceptar;

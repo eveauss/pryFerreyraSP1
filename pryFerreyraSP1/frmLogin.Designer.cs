@@ -29,31 +29,43 @@
         private void InitializeComponent()
         {
             gbLogin = new GroupBox();
+            btnCancelar = new Button();
             txtContraseña = new TextBox();
             lblContraseña = new Label();
             txtUsuario = new TextBox();
             btnIngresar = new Button();
             lblUsuario = new Label();
-            btnCancelar = new Button();
             gbLogin.SuspendLayout();
             SuspendLayout();
             // 
             // gbLogin
             // 
-            gbLogin.BackColor = Color.LightSlateGray;
+            gbLogin.BackColor = Color.LightSteelBlue;
             gbLogin.Controls.Add(btnCancelar);
             gbLogin.Controls.Add(txtContraseña);
             gbLogin.Controls.Add(lblContraseña);
             gbLogin.Controls.Add(txtUsuario);
             gbLogin.Controls.Add(btnIngresar);
             gbLogin.Controls.Add(lblUsuario);
-            gbLogin.ForeColor = Color.Transparent;
+            gbLogin.ForeColor = Color.Black;
             gbLogin.Location = new Point(45, 66);
             gbLogin.Name = "gbLogin";
             gbLogin.Size = new Size(200, 263);
             gbLogin.TabIndex = 8;
             gbLogin.TabStop = false;
             gbLogin.Enter += gbLogin_Enter;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.BackColor = Color.White;
+            btnCancelar.ForeColor = SystemColors.ActiveCaptionText;
+            btnCancelar.Location = new Point(11, 164);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(81, 28);
+            btnCancelar.TabIndex = 11;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // txtContraseña
             // 
@@ -99,26 +111,15 @@
             lblUsuario.TabIndex = 6;
             lblUsuario.Text = "Usuario";
             // 
-            // btnCancelar
-            // 
-            btnCancelar.BackColor = Color.White;
-            btnCancelar.ForeColor = SystemColors.ActiveCaptionText;
-            btnCancelar.Location = new Point(11, 164);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(81, 28);
-            btnCancelar.TabIndex = 11;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = false;
-            btnCancelar.Click += btnCancelar_Click;
-            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonHighlight;
+            BackColor = Color.White;
             ClientSize = new Size(300, 412);
             Controls.Add(gbLogin);
             Name = "frmLogin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             gbLogin.ResumeLayout(false);
             gbLogin.PerformLayout();
