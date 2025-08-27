@@ -22,18 +22,23 @@ namespace pryFerreyraSP1
                 this.Hide();
                 frmInicio f = new frmInicio();
                 f.Text = txtUsuario.Text;
-                f.ShowDialog(); 
+                f.ShowDialog();
                 this.Show();
             }
             else
             {
                 MessageBox.Show("Usuario o Contraseña incorrectos");
                 intentos++;
-                if (intentos == 1)
+                if (intentos == 3)
                 {
                     this.Close();
                 }
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

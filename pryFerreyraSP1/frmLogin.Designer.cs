@@ -28,35 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
             gbLogin = new GroupBox();
             txtContraseña = new TextBox();
             lblContraseña = new Label();
             txtUsuario = new TextBox();
             btnIngresar = new Button();
             lblUsuario = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            btnCancelar = new Button();
             gbLogin.SuspendLayout();
             SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.fondo;
-            pictureBox1.Location = new Point(12, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(276, 397);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 7;
-            pictureBox1.TabStop = false;
-            // 
             // gbLogin
             // 
-            gbLogin.BackColor = Color.LightSteelBlue;
+            gbLogin.BackColor = Color.LightSlateGray;
+            gbLogin.Controls.Add(btnCancelar);
             gbLogin.Controls.Add(txtContraseña);
             gbLogin.Controls.Add(lblContraseña);
             gbLogin.Controls.Add(txtUsuario);
             gbLogin.Controls.Add(btnIngresar);
             gbLogin.Controls.Add(lblUsuario);
+            gbLogin.ForeColor = Color.Transparent;
             gbLogin.Location = new Point(45, 66);
             gbLogin.Name = "gbLogin";
             gbLogin.Size = new Size(200, 263);
@@ -89,11 +80,11 @@
             // 
             // btnIngresar
             // 
-            btnIngresar.BackColor = Color.Black;
-            btnIngresar.ForeColor = SystemColors.ButtonHighlight;
-            btnIngresar.Location = new Point(115, 164);
+            btnIngresar.BackColor = Color.White;
+            btnIngresar.ForeColor = SystemColors.ActiveCaptionText;
+            btnIngresar.Location = new Point(109, 164);
             btnIngresar.Name = "btnIngresar";
-            btnIngresar.Size = new Size(75, 23);
+            btnIngresar.Size = new Size(81, 28);
             btnIngresar.TabIndex = 7;
             btnIngresar.Text = "Ingresar";
             btnIngresar.UseVisualStyleBackColor = false;
@@ -108,30 +99,39 @@
             lblUsuario.TabIndex = 6;
             lblUsuario.Text = "Usuario";
             // 
+            // btnCancelar
+            // 
+            btnCancelar.BackColor = Color.White;
+            btnCancelar.ForeColor = SystemColors.ActiveCaptionText;
+            btnCancelar.Location = new Point(11, 164);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(81, 28);
+            btnCancelar.TabIndex = 11;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click;
+            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaptionText;
+            BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(300, 412);
             Controls.Add(gbLogin);
-            Controls.Add(pictureBox1);
             Name = "frmLogin";
             Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             gbLogin.ResumeLayout(false);
             gbLogin.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private GroupBox gbLogin;
         private TextBox txtContraseña;
         private Label lblContraseña;
         private TextBox txtUsuario;
         private Button btnIngresar;
         private Label lblUsuario;
+        private Button btnCancelar;
     }
 }
