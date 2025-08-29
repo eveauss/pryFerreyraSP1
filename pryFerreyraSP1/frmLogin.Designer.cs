@@ -40,6 +40,7 @@
             // 
             // gbLogin
             // 
+            gbLogin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             gbLogin.BackColor = Color.LightSteelBlue;
             gbLogin.Controls.Add(btnCancelar);
             gbLogin.Controls.Add(txtContraseña);
@@ -57,6 +58,7 @@
             // 
             // btnCancelar
             // 
+            btnCancelar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnCancelar.BackColor = Color.White;
             btnCancelar.ForeColor = SystemColors.ActiveCaptionText;
             btnCancelar.Location = new Point(11, 164);
@@ -69,6 +71,7 @@
             // 
             // txtContraseña
             // 
+            txtContraseña.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtContraseña.Location = new Point(90, 124);
             txtContraseña.Name = "txtContraseña";
             txtContraseña.Size = new Size(100, 23);
@@ -76,6 +79,7 @@
             // 
             // lblContraseña
             // 
+            lblContraseña.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblContraseña.AutoSize = true;
             lblContraseña.Location = new Point(11, 127);
             lblContraseña.Name = "lblContraseña";
@@ -85,6 +89,7 @@
             // 
             // txtUsuario
             // 
+            txtUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtUsuario.Location = new Point(90, 76);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(100, 23);
@@ -92,6 +97,7 @@
             // 
             // btnIngresar
             // 
+            btnIngresar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnIngresar.BackColor = Color.White;
             btnIngresar.ForeColor = SystemColors.ActiveCaptionText;
             btnIngresar.Location = new Point(109, 164);
@@ -104,6 +110,7 @@
             // 
             // lblUsuario
             // 
+            lblUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblUsuario.AutoSize = true;
             lblUsuario.Location = new Point(11, 76);
             lblUsuario.Name = "lblUsuario";

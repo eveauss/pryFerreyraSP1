@@ -21,5 +21,15 @@ namespace pryFerreyraSP1
         {
 
         }
+
+        private void frmInicio_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
